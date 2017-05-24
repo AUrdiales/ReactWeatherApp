@@ -11750,9 +11750,18 @@ function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { de
 
 var Examples = function Examples(props) {
     return _react2.default.createElement(
-        'h3',
+        'div',
         null,
-        'Examples'
+        _react2.default.createElement(
+            'h3',
+            null,
+            'Examples'
+        ),
+        _react2.default.createElement(
+            'p',
+            null,
+            'Welcome to the examples page'
+        )
     );
 };
 module.exports = Examples;
