@@ -11726,11 +11726,20 @@ var _react2 = _interopRequireDefault(_react);
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
 var About = function About(props) {
-     return _react2.default.createElement(
-          'h3',
-          null,
-          'About Component'
-     );
+    return _react2.default.createElement(
+        'div',
+        null,
+        _react2.default.createElement(
+            'h3',
+            null,
+            'About'
+        ),
+        _react2.default.createElement(
+            'p',
+            null,
+            'Welcome to the about page'
+        )
+    );
 };
 
 module.exports = About;
