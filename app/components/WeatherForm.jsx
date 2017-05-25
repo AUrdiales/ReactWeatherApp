@@ -20,7 +20,7 @@ class WeatherForm extends React.Component {
                             <input type="text"  ref={(ref) => {this.location = ref}}  id="city"/>
                             <label htmlFor="city">Enter the city</label>
                         </div>
-                         <button className="btn">Get Weather</button>
+                         <button className="btn grey lighten-5 blue-text">Get Weather</button>
                     </div>
                 </form>
             </div>

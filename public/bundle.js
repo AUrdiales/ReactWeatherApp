@@ -13000,7 +13000,7 @@ var WeatherForm = function (_React$Component) {
                         ),
                         _react2.default.createElement(
                             'button',
-                            { className: 'btn' },
+                            { className: 'btn grey lighten-5 blue-text' },
                             'Get Weather'
                         )
                     )
