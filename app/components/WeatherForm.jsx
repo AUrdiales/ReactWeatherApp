@@ -13,10 +13,15 @@ class WeatherForm extends React.Component {
     }
     render() {
         return (
-            <div>
-                <form onSubmit={this.onFormSubmit}>
-                    <input type="text"  ref={(ref) => {this.location = ref}} placeholder="Enter city name" className="city"/>
-                    <button>Get Weather</button>
+            <div className="row">
+                <form onSubmit={this.onFormSubmit} className="col s6">
+                    <div className="row">
+                        <div className="input-field col s12">
+                            <input type="text"  ref={(ref) => {this.location = ref}}  id="city"/>
+                            <label htmlFor="city">Enter the city</label>
+                        </div>
+                         <button className="btn">Get Weather</button>
+                    </div>
                 </form>
             </div>
         );

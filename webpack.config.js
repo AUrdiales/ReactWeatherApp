@@ -1,6 +1,20 @@
-var ext = [];
+var webpack = require('webpack');
+
 module.exports = {
-  entry: './app/app.jsx',
+  entry: [
+    'script-loader!jquery/dist/jquery.min.js',
+    'script-loader!materialize-css/dist/js/materialize.min.js',
+    './app/app.jsx'
+    ],
+    externals: {
+      jquery: 'jQuery'
+    },
+    plugins: [
+      new webpack.ProvidePlugin({
+        '$': 'jquery',
+        'jQuery': 'jquery'
+      })
+    ],
   output: {
     path: __dirname,
     filename: './public/bundle.js'

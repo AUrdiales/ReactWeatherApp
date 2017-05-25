@@ -3,10 +3,8 @@ import Nav from 'Nav';
 
 var Main = (props) => {
     return(
-        <div>
+        <div >
             <Nav/>
-            <h2>Main component</h2>
-            
          </div>
         );
 }
